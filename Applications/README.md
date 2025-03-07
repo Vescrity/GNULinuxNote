@@ -84,14 +84,20 @@
 
 ### WM
 
+- niri
+- labwc
+- sway(swayfx)
 - Hyprland
-- Sway(Swayfx)
-- Wayfire: 3D
+- wayfire: 3D
 - dwl: DWM 的 Wayland 实现
+
+> 基于 wlroots 的混成器似乎在 NVIDIA 专有驱动(例如 i+n 卡笔记本电脑的外接屏)
+> 有些混成器并不基于 wlroots 但也实现了大部分的 wlr api，使得很多指定要在 wlroots 上运行的工具也可用，如 niri, Hyprland
 
 ### bar/panel/dock
 
 - waybar
+- lxqt-panel
 - nwg-panel
 - nwg-dock
 - wf-dock
@@ -134,7 +140,7 @@
 - mpv
     - mpv-mpris
 - haruna: mpv+GUI
-- audacious
+- audacious: 可用于支持 midi 播放
 - vlc
 
 ### 制谱
@@ -143,10 +149,14 @@
 
 ### pro-audio
 
+详见 [这里](../MusicProduction)
+
 #### DAW
 
 - Ardour
 - lmms
+- muse
+- ……
 
 #### 插件
 
@@ -154,6 +164,7 @@
 - surge-xt
 - yabridge: 在 Linux DAW 中使用 WINE 中的 VST
 - lsp-plugins
+- ……
 
 #### JACK Control
 
@@ -164,7 +175,7 @@
 
 - ppsspp: PSP 模拟
 - dolphin-emu: GameCube/Wii 模拟
-- steam
+- steam [专有软件]
 - wine
 
 ## 玩具

@@ -37,7 +37,7 @@ Kvantum 用于加载并配置主题，qt6ct 则用于应用主题。
 
 ## GTK
 
-推荐 `lxappearence` 配置。  
+~~推荐 `lxappearence` 配置~~ `nwg-look`。  
 
 推荐主题：[Sweet-Dark-v40](https://www.pling.com/p/1253385/)
 

@@ -33,12 +33,20 @@ Arch 上启用 plymouth 还得稍稍做些设置，照着 Archwiki 做就够了�
 
 ## Display-Manager
 
-用过 SDDM ，LightDM，现在在用 greetd + nwg-hello。
+用过 SDDM ，LightDM，~~现在在用 greetd + nwg-hello。~~
+- [2024年末] 使用包装过的 `tuigreet` -> [tmux-greet](https://github.com/Vescrity/tmux-greet)
 
 - SDDM 在用 KDE 时倒也很好用——不过我不在用。
 - [LightDM 有几个不同的前端](https://wiki.archlinux.org/title/LightDM#Greeter)。
     - 默认 `LightDM GTK Greeter` 能用，但算不上多美观。
     - EndeavourOS 和 Linux Mint 默认使用的是 `slick-greeter`，美观上确实不错但我在 Arch 上用的时候碰到了密码框不展示的问题。
+    
+### tmux-greet
+
+轻量、快速、可配置快捷键(例如调节亮度)、可执行命令(以 greeter 帐户)
+
+### greetd
+
 - greetd 我个人认为是个比较符合 UNIX 哲学的组件——只做 login manager daemon，你可以用几乎任何东西做它的前端。`... does not make assumptions about what the user wants to launch, should it be console-based or graphical.` 即你可启动一个登陆屏幕，也可以是文本登陆界面，甚至直接自动登入你的账号。
 
 > **踩坑**
@@ -46,7 +54,7 @@ Arch 上启用 plymouth 还得稍稍做些设置，照着 Archwiki 做就够了�
 > https://wiki.archlinux.org/title/Greetd#Run_local_programs
 > 我的解决方法是将 `~/.zprofile` 软链接了一份到 `~/.profile`
 
-### QtGreet
+#### QtGreet
 
 ~~看了几个不同的实现最后对它心动了~~*Update: 感觉不如 `nwg-hello`*。[项目主页&截图](https://gitlab.com/marcusbritanicus/QtGreet)
 缺点是配置文档似乎是几乎没有。只好照着默认配置乱改。
@@ -65,7 +73,7 @@ Arch 上启用 plymouth 还得稍稍做些设置，照着 Archwiki 做就够了�
 - 亮度调节：可用于关屏等。我依赖了 `light(-git)` 包来实现。
 - 甚至启动终端：默认下 greetd 用用户 greeter 启动这些任务。只是用户主目录是 `/`。直接把主目录改到 `/home/greeter`，就和普通用户几乎无异了。做一个临时命令行登陆或是直接当一个新用户来用都可行。
 
-### nwg-hello
+#### nwg-hello
 
 大体还是如上，不过它在官方仓库中，且有较明确的配置文档。将我的 dwl 改成自动启动 nwg-hello 就可以了。
 

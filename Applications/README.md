@@ -91,7 +91,7 @@
 - wayfire: 3D
 - dwl: DWM 的 Wayland 实现
 
-> 基于 wlroots 的混成器似乎在 NVIDIA 专有驱动(例如 i+n 卡笔记本电脑的外接屏)上会闪烁
+> 基于 wlroots 的混成器似乎在 NVIDIA 专有驱动(例如 i+n 卡笔记本电脑的外接屏)上会闪烁  
 > 有些混成器并不基于 wlroots 但也实现了大部分的 wlr api，使得很多指定要在 wlroots 上运行的工具也可用，如 niri, Hyprland
 
 ### bar/panel/dock

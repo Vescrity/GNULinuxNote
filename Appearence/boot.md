@@ -41,9 +41,6 @@ Arch 上启用 plymouth 还得稍稍做些设置，照着 Archwiki 做就够了�
     - 默认 `LightDM GTK Greeter` 能用，但算不上多美观。
     - EndeavourOS 和 Linux Mint 默认使用的是 `slick-greeter`，美观上确实不错但我在 Arch 上用的时候碰到了密码框不展示的问题。
     
-### tmux-greet
-
-轻量、快速、可配置快捷键(例如调节亮度)、可执行命令(以 greeter 帐户)
 
 ### greetd
 
@@ -53,6 +50,10 @@ Arch 上启用 plymouth 还得稍稍做些设置，照着 Archwiki 做就够了�
 >
 > https://wiki.archlinux.org/title/Greetd#Run_local_programs
 > 我的解决方法是将 `~/.zprofile` 软链接了一份到 `~/.profile`
+
+#### tmux-greet
+
+轻量、快速、可配置快捷键(例如调节亮度)、可执行命令(以 greeter 帐户)
 
 #### QtGreet
 

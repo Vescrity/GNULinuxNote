@@ -16,7 +16,7 @@
 
 ### 系统工具
 
-- fcitx5: 输入法
+- fcitx5: 输入法框架
 - htop: 任务管理
 - nvtop: 显卡任务状态查看
 - pavucontrol-qt: 基本的音频控制

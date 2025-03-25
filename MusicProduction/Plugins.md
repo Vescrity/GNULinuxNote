@@ -5,8 +5,11 @@
 ## 合成器
 
 - Yoshimi
+- zynaddsubfx
 - surge-xt
 - geonkick
+    - 用来捏鼓
+- ot-keys
 - vital [专有软件]
 
 ## 效果器

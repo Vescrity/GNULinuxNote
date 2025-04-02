@@ -18,3 +18,18 @@
 
 在 PCIe 的项目中启用 RUNTIME PM 即可。亦可只针对 NVIDIA 进行 RUNTIME PM。
 
+---
+
+## Tips
+
+##### mpv 等应用默认使用独显
+解决：
+```
+export VK_LOADER_DRIVERS_SELECT=intel_hasvk_icd.x86_64.json,intel_icd.x86_64.json
+```
+或
+```
+VK_LOADER_DRIVERS_DISABLE="nvidia_icd.json"
+```
+
+
